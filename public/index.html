@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Banner Demo</title>
+  <style>
+    #overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9998;
+      display: none;
+    }
+    #modal {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      display: none;
+      max-width: 90%;
+    }
+    #modal button {
+      margin: 0 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meine Webseite</h1>
+  <p>Willkommen! Teste das Cookie-Banner unten.</p>
+
+  <script src="cookie-banner.js?lang=de&text=Wir%20nutzen%20Cookies&accept=OK&decline=Nein"></script>
+</body>
+</html>
